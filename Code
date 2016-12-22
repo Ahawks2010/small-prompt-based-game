@@ -1,0 +1,49 @@
+var age 
+var name
+var dec1
+var dec2
+var dec3
+var playagain
+playagain = prompt("would you like to play?")
+while(playagain === "yes"){
+age = prompt("how old are you")
+if (age >= 8){ 
+prompt("lets play")
+}
+else {
+prompt("thats sucks you need to be older")
+system.exit(0)
+}
+name = prompt("what is your name")
+prompt("hello " + name + " lets play")
+dec1 = prompt("you start out in the woods and want to get out, and you see a black hole and a game trail what do you choose")
+if (dec1 === "game trail"){
+prompt("you walk down the path")
+}
+else{
+prompt("you fall to your death")
+system.exit(0)
+}
+dec2 = prompt("after walking down the trail your path splits do you walk down the left or right path *add path after direction*")
+if (dec2 === "right path"){
+prompt("you walk down the path")
+}
+else {
+prompt("you start to walk but trip on a rock and fall on a spear")
+system.exit(0)
+}
+dec3 = prompt("while walking down the path you see a bright light to your right and to the left you see flames which do you choose?*choose left path or right path*")
+if (dec3 === "left path"){
+prompt("the path you take leads you to town and you live!")
+}
+else{
+prompt("you walk to the light and see a house and when you walk in a witch trips you and you fall into a cauldron and are cooked")
+}
+playagain = prompt("would you like to play again?")
+if (playagain === "yes"){
+prompt("okay")
+}
+else{
+system.exit(0)
+}
+}
